@@ -4,10 +4,8 @@ const nextConfig: NextConfig = {
   output: "export", 
   experimental: {
     agentFeedback: true,
-    // Ensure ppr: true is NOT set here
   },
-  cacheComponents: true,
-  // REMOVED: partialPrefetching: true
+  // REMOVED: cacheComponents: true
   turbopack: {
     rules: {
       "*.css": {
