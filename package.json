@@ -1,22 +1,26 @@
 {
-  "name": "vue-app",
+  "name": "next-test",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "vue": "^3.5.44"
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@types/node": "^24.19.2",
-    "@vitejs/plugin-vue": "^6.0.10",
-    "@vue/tsconfig": "^0.9.1",
-    "typescript": "~6.0.3",
-    "vite": "^8.3.5",
-    "vue-tsc": "^3.3.13"
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
   }
 }
