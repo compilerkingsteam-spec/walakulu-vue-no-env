@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Add this line to enable static exports
-  /* config options here */
+  output: "export", 
   experimental: {
     agentFeedback: true,
+    // Ensure ppr: true is NOT set here
   },
   cacheComponents: true,
-  partialPrefetching: true,
+  // REMOVED: partialPrefetching: true
   turbopack: {
     rules: {
       "*.css": {
